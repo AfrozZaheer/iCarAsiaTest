@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactsTableViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="ContactsTableViewCell" customModule="iCarAsia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTm-IR-OZi">
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="85"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-9r-Lra">
+                                <rect key="frame" x="16" y="17.666666666666671" width="50" height="50"/>
+                                <color key="backgroundColor" name="AppPrimary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ZoG-EG-pFi"/>
+                                    <constraint firstAttribute="height" constant="50" id="vLl-WY-CaZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pheobe Monroe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCL-Hn-tJg">
+                                <rect key="frame" x="78" y="32" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yeg-9r-Lra" firstAttribute="leading" secondItem="eTm-IR-OZi" secondAttribute="leading" constant="16" id="Dad-cI-tS5"/>
+                            <constraint firstItem="DCL-Hn-tJg" firstAttribute="centerY" secondItem="eTm-IR-OZi" secondAttribute="centerY" id="PA3-qQ-VwN"/>
+                            <constraint firstItem="DCL-Hn-tJg" firstAttribute="leading" secondItem="yeg-9r-Lra" secondAttribute="trailing" constant="12" id="ef0-6O-YZB"/>
+                            <constraint firstItem="yeg-9r-Lra" firstAttribute="centerY" secondItem="eTm-IR-OZi" secondAttribute="centerY" id="nva-2V-Hbg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eTm-IR-OZi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1fg-Sj-byu"/>
+                    <constraint firstAttribute="bottom" secondItem="eTm-IR-OZi" secondAttribute="bottom" id="3fP-uo-CuK"/>
+                    <constraint firstAttribute="trailing" secondItem="eTm-IR-OZi" secondAttribute="trailing" id="L1E-B1-fvH"/>
+                    <constraint firstItem="eTm-IR-OZi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yFd-ER-saF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contactImageView" destination="yeg-9r-Lra" id="O5Y-t0-nF2"/>
+                <outlet property="nameLbl" destination="DCL-Hn-tJg" id="RRF-Vp-bCe"/>
+            </connections>
+            <point key="canvasLocation" x="2.2900763358778624" y="34.154929577464792"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppPrimary">
+            <color red="1" green="0.5490196078431373" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
