@@ -8,7 +8,7 @@
 import Foundation
 
 class Contact: Codable {
-    var id: String?
+    var id: String
     var firstName: String?
     var lastName: String?
     var email: String?
@@ -22,7 +22,7 @@ class Contact: Codable {
         case phone = "phone"
     }
     
-    init(id: String?, firstName: String?, lastName: String?, email: String?, phone: String?) {
+    init(id: String, firstName: String?, lastName: String?, email: String?, phone: String?) {
         self.id = id
         self.firstName = firstName
         self.lastName = lastName

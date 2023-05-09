@@ -112,7 +112,12 @@ extension ContactDetailViewController: UITableViewDelegate, UITableViewDataSourc
 
 extension ContactDetailViewController: InformationTableViewCellDelegate {
     func infoCell(_ cell: InformationTableViewCell, updateTextField text: String, fieldType: InfomationFieldType) {
-        let newContact = Contact(id: self.contact?.id, firstName: self.contact?.firstName, lastName: self.contact?.lastName, email: self.contact?.email, phone: self.contact?.phone)
+        var id = "\(Int.random(in: 1..<1000))"
+        if let currentItem = self.contact {
+            id = currentItem.id 
+        }
+        
+        let newContact = Contact(id: id, firstName: self.contact?.firstName, lastName: self.contact?.lastName, email: self.contact?.email, phone: self.contact?.phone)
         switch fieldType {
         case .firstName:
             newContact.firstName = text
